@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(130, 226, 217);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+  /* What kind of selector is this? */
+  .logo {
+    width: 150px;
+    height: 150px;
+    margin: 3% 10%;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1% 99%;
+    width: 100%;
+  }
+
+  main {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+  }
+
+  /* This is an element within an element selector */ 
+  nav > a {
+    margin: 2% 5% 2%;
+    height: 10%;
+    width: 10%;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    background: transparent;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid white;
+    
+  }
+  .has-border {
+    border-radius: 100px;
+    border: 3px solid rgb(247, 140, 0);
+    background: #8f8f8f;
+    padding: 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 2%;
+  }
+  /* This is an ID selector */
+  #profile-pic {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    margin: 5% auto;
+    grid-column: 2/3;
+  }
+
+  h1 {
+    color:rgb(0, 0, 0);
+    grid-column: 2/3;
+    margin: 3% auto;
+    border-bottom: 3px dashed rgb(247, 140, 0);
+    text-shadow: px 3px black;
+  }
+
+  h2 {
+    grid-column: 2/3;
+    margin: 3% auto;
+    font-style: italic;
+  }
+
+  .small-text {
+    grid-column: 2/3;
+    color: white;
+    font-size: 10px;
+    margin: 3% auto;
+  }
+
+  button {
+    grid-column: 2/3;
+    margin: 3% auto;
+    width: 70%;
+    height: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: #8f8f8f;
+    padding: 20px;
+    padding-bottom: 5%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    letter-spacing: 16px;
+    font-style: italic;
+    font-weight: bold;
+    border-color: rgb(247, 140, 0)
+  }
