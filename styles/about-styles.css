@@ -15,7 +15,7 @@ body {
 
 header {
   grid-area: header;
-  background-image: url(./AustinSkyline.jpg);
+  background-image: url(../images/AustinSkyline.jpg);
   background-position-y: 650pt;
   border-bottom: 3pt solid black;
 }
