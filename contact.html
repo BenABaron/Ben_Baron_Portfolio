@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./contact-styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>CONTACT ME</h1>
+  </header>
+  <main>
+    <div>
+      <img class="zora-pic" id="pic1" src="Zora-beach.jpg" alt="">
+      <img class="zora-pic" id="pic2" src="Zora-sleep.jpg" alt="">
+    </div>
+    <div>
+      <form action="results.html" method="GET">
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br>
+        <br>
+        <label>How did you hear about me?</label><br>
+        <input type="checkbox" id="classmate" name="classmate">
+        <label for="classmate">I'm a classmate!</label><br>
+        <input type="checkbox" id="resume" name="resume">
+        <label for="resume">Resume submission</label><br>
+        <input type="checkbox" id="linkedin" name="linkedin">
+        <label for="linkedin">linkedIn</label><br>
+        <input type="checkbox" id="coding-rec" name="coding-rec">
+        <label for="coding-rec">Austin Coding Academy Recommendation</label><br>
+        <br>
+        <label>Do you want to be contacted?</label><br>
+        <input type="radio" id="yes" name="contact" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="contact" value="no">
+        <label for="no">No</label><br>
+        <br>
+        <label for="birthday">Your Birthday (if you would like birthday happiness)</label><br>
+        <input type="date" id="birthday" name="birthday"><br>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <nav class="dropdown">
+      <div class="dropbtn">
+        <div class="btnline"></div>
+        <div class="btnline"></div>
+        <div class="btnline"></div>
+      </div>
+      <div class="dropdown-content">
+        <a href="./index.html">Home</a>
+        <a href="./resume.html">Resume</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+      </div>
+    </nav>
+  </main>
+</body>
+</html>
