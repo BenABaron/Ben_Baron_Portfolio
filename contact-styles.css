@@ -1,8 +1,22 @@
 
 body {
   margin: 0;
+  font-family: 'Teko', sans-serif;
   display: grid;
   grid-template-rows: 100pt auto;
+  background: rgb(94,130,180);
+  background: linear-gradient(171deg, rgba(94,130,180,1) 0%, rgba(124,121,114,1) 100%);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 52pt;
+}
+
+h1 {
+  margin-top: 80pt;
 }
 
 main {
@@ -10,14 +24,34 @@ main {
   grid-template-columns: 50% 40% 10%;
 }
 
+.zora {
+  display: flex;
+  flex-direction: column;
+}
+
 .zora-pic {
-  width: 50%;
+  width: 100%;
+  border: 3pt solid black;
+  border-left: transparent;
 }
 
 #pic1 {
-  position: relative;
-  clip-path: polygon(0% 0%, 100% 0%, 0% 50%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 0% 80%);
 }
+
+#pic2 {
+  margin-top: -80%;
+}
+
+.contact-form, input, button {
+  font-size: 25pt;
+  font-family: 'Teko', sans-serif;
+}
+
+.contact-form {
+  margin-left: 20pt;
+}
+
 
 
 
