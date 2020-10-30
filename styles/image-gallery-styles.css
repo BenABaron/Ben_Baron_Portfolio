@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 100px auto;
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+}
+
+.container {
+  position: relative;
+  margin: 3pt;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
