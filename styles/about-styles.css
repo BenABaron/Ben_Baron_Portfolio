@@ -36,6 +36,7 @@ main {
   border-radius: 20pt 100pt;
   height: 80%;
   border: 3pt solid black;
+  overflow: hidden;
 }
 
 img {
