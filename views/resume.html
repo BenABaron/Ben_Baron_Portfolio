@@ -6,13 +6,14 @@
     <title>Resume</title>
     <link rel="stylesheet" href="../styles/resume-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/751f3e5756.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="main-container">
       <header>
-        <img src="../images/Tony.jpg" alt="My boy Tony Hawk" class="head"></img>
-        <h1 class="head">Tony Hawk</h1>
+        <img src="../images/Tony.jpg" alt="My boy Tony Hawk" class="head" id="scared" onmouseover="hide()"></img>
+        <h1 class="head" id="tonyhawk" onclick="bounce()">Tony Hawk</h1>
         <h2 class="head">Professional Skateboarder</h2>
         <p class="head" id="mainP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
           Esse consequuntur sunt recusandae, unde iste exercitationem assumenda, beatae minima dolor omnis, amet quas odio veniam officia ex ullam voluptates rerum aperiam?
@@ -22,8 +23,8 @@
     <aside>
       <h3 id="Contact">Contact Info</h3>
       <section>
-        <i class="fas fa-phone"></i>
-        <p>123-456-7890</p>
+        <i class="fas fa-phone" onclick="unhide()"></i>
+        <p id="hidden">123-456-7890</p>
       </section>
       <section>
         <i class="fas fa-map-pin"></i>
@@ -83,5 +84,6 @@
 
     </main>
   </div>
+  <script src="../js/resume.js"></script>
 </body>
 </html>

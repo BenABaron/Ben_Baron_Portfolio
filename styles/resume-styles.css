@@ -2,8 +2,8 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  font-family: 'Karla', sans-serif;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Karla", sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: rgb(160, 160, 160);
 }
 
@@ -14,7 +14,7 @@ body {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 30% 70%;
-  background-color: rgb(249,255,251)
+  background-color: rgb(249, 255, 251);
 }
 
 header {
@@ -58,7 +58,8 @@ h3 {
   letter-spacing: 3pt;
 }
 
-p, li {
+p,
+li {
   font-size: 9pt;
 }
 
@@ -75,8 +76,13 @@ aside {
   align-items: center;
   justify-content: space-evenly;
   color: white;
-  background: rgb(99,72,228);
-  background: linear-gradient(180deg, rgba(99,72,228,1) 0%, rgba(70,111,223,1) 32%, rgba(73,153,215,1) 100%);
+  background: rgb(99, 72, 228);
+  background: linear-gradient(
+    180deg,
+    rgba(99, 72, 228, 1) 0%,
+    rgba(70, 111, 223, 1) 32%,
+    rgba(73, 153, 215, 1) 100%
+  );
   padding-top: 25pt;
   padding-bottom: 75pt;
 }
@@ -118,4 +124,8 @@ h4 {
 
 .detail {
   margin-top: 0pt;
+}
+
+#hidden {
+  visibility: hidden;
 }
