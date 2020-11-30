@@ -3,38 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/reset.css">
   <link rel="stylesheet" href="../styles/about-styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <title>About Me</title>
 </head>
 <body>
-  <div class="main-container">
-    <header>
-    </header>
-    <main>
-      <nav class="dropdown">
-        <div class="dropbtn">
-          <div class="btnline"></div>
-          <div class="btnline"></div>
-          <div class="btnline"></div>
-        </div>
-        <div class="dropdown-content">
-          <a href="../index.html">Home</a>
-          <a href="./resume.html">Resume</a>
-          <a href="">Blog</a>
-          <a href="./contact.html">Contact</a>
-        </div>
-      </nav>
-      <div class="main-content">
-        <img src="../images/myProfilePic.jpg" alt="Headshot of me" id="headshot">
-        <article>
-          <h1>About Me</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nihil minus quae dolorem! A consequatur veritatis esse distinctio corrupti consectetur quisquam odio debitis ullam eos, sit blanditiis facilis provident tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, magni veritatis quibusdam nam commodi earum optio error velit aut ipsam impedit accusamus nobis minima sit, sint necessitatibus obcaecati ducimus doloribus! Lorem ipsum dolor</p>
-          <p class="second-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, sint in. Repellendus fugiat cumque, delectus id amet dolor labore, suscipit ex voluptates omnis dolorum! Cumque dicta deleniti nostrum incidunt neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae sunt voluptatem repellat accusantium ducimus quaerat eligendi quia facilis error. Sunt exercitationem nam consequatur quasi nihil quibusdam officia, temporibus deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet accusantium labore porro atque architecto officia voluptates. Aliquam temporibus earum iusto, nihil laboriosam veniam alias ipsa, perspiciatis eos optio voluptatem! Commodi!</p>
-        </article>
+  <header>
+    <!-- Default Navbar -->
+    <nav id="NavDefault">
+      <a href="/index.html">Home</a>
+      <a href="./resume.html">Resume</a>
+      <a href="./contact.html">Contact Me</a>
+    </nav>
+    <!-- Mobile Navbar -->
+    <nav id="NavMobile">
+      <div class="DropBtn">
+        <div class="BtnLine"></div>
+        <div class="BtnLine"></div>
+        <div class="BtnLine"></div>        
       </div>
-
-    </main>
-  </div>
+      <div class="DropdownContent">
+        <a href="/index.html">Home</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./contact.html">Contact Me</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="HeaderContent">
+      <img id="ProfilePic" src="../images/myProfilePic.jpg" alt="">
+      <h1>ABOUT ME</h1>
+    </div>
+    <div class="MainContent">
+      <img class="Pic1" src="../images/Ben-Drums.jpg" alt="">
+      <article class="Article1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius perferendis fuga incidunt fugiat debitis sed esse, obcaecati eveniet? Odio, corporis commodi! Soluta et laborum voluptatem itaque possimus delectus odit similique.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione numquam enim earum nemo culpa commodi dolore quia facere sunt? Labore, repudiandae iste illum consectetur nobis quae nulla aliquam beatae earum?</article>
+      <img class="Pic2" src="../images/Zora River.jpg" alt="">
+      <article class="Article2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius perferendis fuga incidunt fugiat debitis sed esse, obcaecati eveniet? Odio, corporis commodi! Soluta et laborum voluptatem itaque possimus delectus odit similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit deserunt repellat asperiores, fugiat vitae voluptatum veniam officiis tempora rem, optio autem doloremque quisquam voluptate impedit nulla alias assumenda necessitatibus.
+      </article>
+    </div>
+  </main>
+  
 </body>
 </html>
