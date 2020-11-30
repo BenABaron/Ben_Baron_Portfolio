@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/portfolio2-styles.css">
+  <script src="/image-gallery.js"></script>
+  <title>Portfolio</title>
+</head>
+<body>
+  <header>
+    <!-- Default Navbar -->
+    <nav id="NavDefault">
+      <a href="../index.html">Home</a>
+      <a href="./resume.html">Resume</a>
+      <a href="./contact.html">Contact Me</a>
+    </nav>
+    <!-- Mobile Navbar -->
+    <nav id="NavMobile">
+      <div class="DropBtn">
+        <div class="BtnLine"></div>
+        <div class="BtnLine"></div>
+        <div class="BtnLine"></div>        
+      </div>
+      <div class="DropdownContent">
+        <a href="../index.html">Home</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <h1>BEN BARON'S PORTFOLIO</h1>
+  </header>
+  <main>
+    <div class="gallery">
+      <div class="container">
+        <img src="../images/Porfolio-Pics/Calculator-Window.png" alt="" class="image">
+        <div id="Calc" onclick="OpenWindow(this.id)" class="overlay">
+          <div class="text">BASIC CALCULATOR</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="../images/Porfolio-Pics/Gallery-Window.png" alt="" class="image">
+        <div id="Gallery" onclick="OpenWindow(this.id)" class="overlay">
+          <div class="text">IMAGE GALLERY</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="../images/Porfolio-Pics/Nasa-Window.png" alt="" class="image">
+        <div id="Nasa" onclick="OpenWindow(this.id)" class="overlay">
+          <div class="text">NASA LANDING PAGE</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="../images/Porfolio-Pics/Responsive-Site-Window.png" alt="" class="image">
+        <div id="Respond" onclick="OpenWindow(this.id)" class="overlay">
+          <div class="text">FIRST RESPONSIVE WEBSITE</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="../images/Porfolio-Pics/TTT-Window.png" alt="" class="image">
+        <div id="TTT" onclick="OpenWindow(this.id)" class="overlay">
+          <div class="text">TIC TAC TOE :)</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../js/portfolio2.js"></script>
+</body>
+</html>
