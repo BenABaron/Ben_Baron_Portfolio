@@ -1,0 +1,163 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/AustinSkyline.jpg);
+  background-position-y: -370px;
+  background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+#NavDefault {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+}
+
+a {
+  font-size: 20pt;
+  text-decoration: none;
+  padding: 10pt 40pt;
+  color: white;
+}
+
+/* MOBILE NAVBAR */
+#NavMobile {
+  margin: 3pt;
+  position: relative;
+  display: none;
+  width: 40pt;
+  height: 40pt;
+}
+
+.DropBtn {
+  background-color: black;
+  padding: 8px;
+  border: none;
+  border-radius: 25%;
+}
+
+.BtnLine {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(197, 197, 197);
+  margin: 6px auto;
+}
+
+.DropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #b91d1d;
+  margin-left: -160px;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.DropdownContent a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.DropdownContent a:hover {
+  background-color: rgb(41, 41, 41);
+}
+
+#NavMobile:hover .DropdownContent {
+  display: block;
+}
+
+#NavMobile:hover .DropdownContent {
+  background-color: #000000;
+}
+
+/* MAIN CONTENT */
+main {
+  width: 100%;
+  height: 800px;
+  background-color: cadetblue;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 30% 50% 20%;
+}
+
+img {
+  margin-top: 70pt;
+  display: flex;
+  justify-self: center;
+  min-width: 220px;
+  max-width: 70%;
+  border-radius: 100%;
+}
+
+h1,
+.about,
+.PortfolioButton {
+  grid-column: 2/3;
+}
+
+h1 {
+  display: flex;
+  align-self: flex-end;
+  font-size: 70pt;
+  font-weight: bold;
+}
+
+.about {
+  font-size: 20pt;
+  margin: 20pt 30pt 0pt 0pt;
+  line-height: 30pt;
+}
+
+.PortfolioButton {
+  display: flex;
+  justify-self: center;
+  background-color: black;
+  height: 25pt;
+  padding: 15pt 25%;
+  letter-spacing: 10pt;
+}
+
+@media (max-width: 1350px) {
+  .PortfolioButton {
+    grid-column: 1/3;
+  }
+}
+
+@media (max-width: 655px) {
+  header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #NavDefault {
+    display: none;
+  }
+
+  #NavMobile {
+    display: inline-block;
+  }
+
+  img {
+    margin-top: 0pt;
+    grid-row: 1/2;
+    max-width: 90%;
+    align-self: center;
+    min-width: 0px;
+    justify-self: flex-end;
+  }
+
+  h1 {
+    margin-left: 20pt;
+  }
+
+  .about {
+    grid-column: 1/3;
+    margin-left: 30pt;
+  }
+}
