@@ -202,3 +202,18 @@ h4 {
 #hidden {
   visibility: hidden;
 }
+
+@media (max-width: 825px) {
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #NavDefault {
+    display: none;
+  }
+
+  #NavMobile {
+    display: inline-block;
+  }
+}

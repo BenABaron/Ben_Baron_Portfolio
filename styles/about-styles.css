@@ -195,7 +195,7 @@ article {
   }
 }
 
-@media (max-width: 655px) {
+@media (max-width: 825px) {
   header {
     display: flex;
     justify-content: flex-end;
@@ -208,7 +208,9 @@ article {
   #NavMobile {
     display: inline-block;
   }
+}
 
+@media (max-width: 655px) {
   .HeaderContent {
     flex-direction: column;
     margin: 0px;

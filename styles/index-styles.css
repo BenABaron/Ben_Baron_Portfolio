@@ -129,7 +129,7 @@ h1 {
   }
 }
 
-@media (max-width: 655px) {
+@media (max-width: 825px) {
   header {
     display: flex;
     justify-content: flex-end;
@@ -142,7 +142,9 @@ h1 {
   #NavMobile {
     display: inline-block;
   }
+}
 
+@media (max-width: 655px) {
   img {
     margin-top: 0pt;
     grid-row: 1/2;

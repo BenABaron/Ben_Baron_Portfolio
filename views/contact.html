@@ -5,11 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/contact-styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
   <header>
-    <h1>CONTACT ME </h1>
+    <!-- Default Navbar -->
+    <nav id="NavDefault">
+      <a href="../index.html">Home</a>
+      <a href="./about.html">About Me</a>
+      <a href="./resume.html">Resume</a>
+      <a href="./contact.html">Contact Me</a>
+    </nav>
+    <!-- Mobile Navbar -->
+    <nav id="NavMobile">
+      <div class="DropBtn">
+        <div class="BtnLine"></div>
+        <div class="BtnLine"></div>
+        <div class="BtnLine"></div>        
+      </div>
+      <div class="DropdownContent">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About Me</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./contact.html">Contact Me</a>
+      </div>
+    </nav>
+
   </header>
   <main>
     <div class="zora">
@@ -17,6 +39,7 @@
       <img class="zora-pic" id="pic2" src="../images/Zora-beach.jpg" alt="">
     </div>
     <div class="contact-form">
+      <h1>CONTACT ME </h1>
       <form action="results.html" method="GET">
         <label for="fname">First name</label><br>
         <input type="text" id="fname" name="fname"><br>
@@ -47,19 +70,6 @@
         <button type="submit">Submit</button>
       </form>
     </div>
-    <nav class="dropdown">
-      <div class="dropbtn">
-        <div class="btnline"></div>
-        <div class="btnline"></div>
-        <div class="btnline"></div>
-      </div>
-      <div class="dropdown-content">
-        <a href="../index.html">Home</a>
-        <a href="./resume.html">Resume</a>
-        <a href="./about.html">About Me</a>
-        <a href="">Blog</a>
-      </div>
-    </nav>
   </main>
 </body>
 </html>
