@@ -4,18 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/portfolio-styles.css">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
 </head>
 <body>
+  <header>
+    <!-- Default Navbar -->
+    <nav id="NavDefault">
+      <a href="../index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./resume.html">Resume</a>
+      <a href="./contact.html">Contact Me</a>
+    </nav>
+    <!-- Mobile Navbar -->
+    <nav id="NavMobile">
+      <div class="DropBtn">
+        <div class="BtnLine"></div>
+        <div class="BtnLine"></div>
+        <div class="BtnLine"></div>        
+      </div>
+      <div class="DropdownContent">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <h1>BEN BARON'S PORTFOLIO</h1>
+  </header>
   <main>
-    <h1>Here's the other stuff I've made</h1>
-    <a href="../index.html" class="back"><-- Back to Home Page</a>
-    <a href="./resume.html">Tony Hawk Resume</a>
-    <a href="https://benabaron.github.io/NASA_landing_v2/">NASA Landing Page</a>
-    <a href="https://benabaron.github.io/First-Responsive-Website/">First Responsive Website</a>
-    <a href="https://benabaron.github.io/calculator-app-101/">"Calculator" lol</a>
-    <a href="https://benabaron.github.io/TicTacToe-101/">Tic Tac Toe</a>
-    <a href="./image-gallery.html">Image Gallery</a>
+    <div class="gallery">
+      <div class="container">
+        <img src="../images/Porfolio-Pics/Calculator-Window.png" alt="" class="image">
+        <div id="Calc" onclick="OpenWindow(this.id)" class="overlay">
+          <div class="text">BASIC CALCULATOR</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="../images/Porfolio-Pics/Gallery-Window.png" alt="" class="image">
+        <div id="Gallery" onclick="OpenWindow(this.id)" class="overlay">
+          <div class="text">IMAGE GALLERY</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="../images/Porfolio-Pics/Nasa-Window.png" alt="" class="image">
+        <div id="Nasa" onclick="OpenWindow(this.id)" class="overlay">
+          <div class="text">NASA LANDING PAGE</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="../images/Porfolio-Pics/Responsive-Site-Window.png" alt="" class="image">
+        <div id="Respond" onclick="OpenWindow(this.id)" class="overlay">
+          <div class="text">FIRST RESPONSIVE WEBSITE</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="../images/Porfolio-Pics/TTT-Window.png" alt="" class="image">
+        <div id="TTT" onclick="OpenWindow(this.id)" class="overlay">
+          <div class="text">TIC TAC TOE :)</div>
+        </div>
+      </div>
+    </div>
   </main>
+  <script src="../js/portfolio.js"></script>
 </body>
 </html>

@@ -1,18 +1,144 @@
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10pt;
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 100px auto;
+  background-color: black;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: black;
 }
 
 h1 {
-  font-size: 40pt;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+/* NAVBAR */
+#NavDefault {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
 }
 
 a {
   font-size: 20pt;
+  text-decoration: none;
+  padding: 10pt 40pt;
+  color: white;
 }
 
-.back {
-  font-size: 30pt;
+/* MOBILE NAVBAR */
+#NavMobile {
+  margin: 2pt;
+  position: relative;
+  display: none;
+  width: 40pt;
+  height: 40pt;
+}
+
+.DropBtn {
+  background-color: black;
+  padding: 8px;
+  border: none;
+  border-radius: 25%;
+}
+
+.BtnLine {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(197, 197, 197);
+  margin: 6px auto;
+}
+
+.DropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #b91d1d;
+  margin-left: -160px;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.DropdownContent a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.DropdownContent a:hover {
+  background-color: rgb(41, 41, 41);
+}
+
+#NavMobile:hover .DropdownContent {
+  display: block;
+}
+
+#NavMobile:hover .DropdownContent {
+  background-color: #000000;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin-top: 30pt;
+}
+
+.container {
+  position: relative;
+  margin: 3pt;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay:hover {
+  cursor: pointer;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #NavDefault {
+    display: none;
+  }
+
+  #NavMobile {
+    display: inline-block;
+    align-self: flex-end;
+  }
 }
