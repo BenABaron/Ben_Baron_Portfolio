@@ -1,10 +1,83 @@
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
   font-family: "Karla", sans-serif;
   font-family: "Rubik", sans-serif;
   background-color: rgb(160, 160, 160);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  background-color: black;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* NAVBAR */
+#NavDefault {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+}
+
+a {
+  font-size: 20pt;
+  text-decoration: none;
+  padding: 10pt 40pt;
+  color: white;
+}
+
+/* MOBILE NAVBAR */
+#NavMobile {
+  margin: 2pt;
+  position: relative;
+  display: none;
+  width: 40pt;
+  height: 40pt;
+}
+
+.DropBtn {
+  background-color: black;
+  padding: 8px;
+  border: none;
+  border-radius: 25%;
+}
+
+.BtnLine {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(197, 197, 197);
+  margin: 6px auto;
+}
+
+.DropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #b91d1d;
+  margin-left: -160px;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.DropdownContent a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.DropdownContent a:hover {
+  background-color: rgb(41, 41, 41);
+}
+
+#NavMobile:hover .DropdownContent {
+  display: block;
+}
+
+#NavMobile:hover .DropdownContent {
+  background-color: #000000;
 }
 
 .main-container {
