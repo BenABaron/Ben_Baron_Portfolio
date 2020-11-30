@@ -3,6 +3,7 @@ body {
   display: grid;
   grid-template-rows: 100px auto;
   background-color: black;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 header {
