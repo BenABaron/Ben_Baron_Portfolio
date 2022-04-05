@@ -134,9 +134,9 @@ h1 {
 
 /* TEXT */
 article {
-  font-size: 26pt;
+  font-size: 40pt;
   margin: 40pt 50pt;
-  line-height: 40pt;
+  line-height: 50pt;
 }
 
 .Article1 {
@@ -159,7 +159,7 @@ article {
   }
 
   article {
-    font-size: 20pt;
+    font-size: 30pt;
     margin: 10pt 20pt;
   }
 }
@@ -179,14 +179,14 @@ article {
   }
 
   article {
-    font-size: 14pt;
-    line-height: 30pt;
+    font-size: 20pt;
+    line-height: 40pt;
   }
 }
 
 @media (max-width: 950px) {
   article {
-    line-height: 20pt;
+    line-height: 30pt;
     margin: 5pt 10pt;
   }
 
