@@ -14,6 +14,12 @@ const OpenWindow = (id) => {
   else if (id === "TTT") {
     window.open("https://benabaron.github.io/TicTacToe-101/", "_blank")
   }
+  else if (id === "Edukids") {
+    window.open("https://benabaron.github.io/edukids-production/", "_blank")
+  }
+  else if (id === "Lessons") {
+    window.open("https://benabaron.github.io/MusicLessonApp/", "_blank")
+  }
   else {
   }
 }
